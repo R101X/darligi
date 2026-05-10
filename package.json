@@ -9,9 +9,20 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node backend/server.js",
     "client": "cd frontend && npm run dev",
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
-  "keywords": ["marketplace", "digital-products", "mern", "react", "nodejs"],
+  "keywords": [
+    "marketplace",
+    "digital-products",
+    "mern",
+    "react",
+    "nodejs"
+  ],
   "author": "DARLIGI",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.90.0"
+  }
 }
